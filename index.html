@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN" id="html-lang">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book of Answers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 背景粒子 -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- 顶部栏 -->
+    <header>
+        <div class="header-left">
+            <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+            <div class="logo-text-wrapper">
+                <div class="logo-text" data-i18n="title">答案之书</div>
+                <div class="logo-sub" data-i18n="subtitle">Book of Answers</div>
+            </div>
+        </div>
+        
+        <!-- 语言选择器 -->
+        <div class="language-selector">
+            <select id="lang-select" aria-label="选择语言">
+                <option value="en-us">English</option>
+                <option value="zh-cn">简体中文</option>
+                <option value="zh-tw">繁體中文</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- 对话区域 -->
+    <main id="chat-main">
+        <div class="chat-container" id="chat-container">
+            <!-- 欢迎区域 -->
+            <div class="welcome" id="welcome">
+                <div class="welcome-orb"></div>
+                <h1 data-i18n="welcome_title">答案之书</h1>
+                <p data-i18n="welcome_desc">心中默念你的问题，然后在此写下。宇宙会为你翻到那一页，给出属于你的答案。</p>
+                <div class="hint-tags">
+                    <button class="hint-tag" onclick="fillQuestion('我应该换一份工作吗？')" data-i18n="hint_1">我应该换一份工作吗</button>
+                    <button class="hint-tag" onclick="fillQuestion('他/她在想我吗？')" data-i18n="hint_2">他/她在想我吗</button>
+                    <button class="hint-tag" onclick="fillQuestion('现在开始来得及吗？')" data-i18n="hint_3">现在开始来得及吗</button>
+                    <button class="hint-tag" onclick="fillQuestion('该不该主动一点？')" data-i18n="hint_4">该不该主动一点</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部输入区 -->
+    <footer>
+        <div class="input-wrapper">
+            <div class="input-box">
+                <textarea id="user-input" rows="1" placeholder="写下你心中的问题..." aria-label="输入你的问题" data-i18n="placeholder"></textarea>
+            </div>
+            <button class="send-btn" id="send-btn" aria-label="发送问题">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+        <div class="footer-hint" data-i18n="footer_hint">翻阅答案之书，聆听内心的回响</div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
