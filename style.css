@@ -38,7 +38,7 @@ body {
 
 .lang-zh-cn .logo-text,
 .lang-zh-cn .welcome h1 {
-    font-family: 'Inter', 'Noto Serif SC', serif;
+    font-family: 'Noto Serif SC', serif;
 }
 
 /* 中文繁体字体 */
@@ -48,7 +48,7 @@ body {
 
 .lang-zh-tw .logo-text,
 .lang-zh-tw .welcome h1 {
-    font-family: 'Inter', 'Noto Serif TC', serif;
+    font-family: 'Noto Serif TC', serif;
 }
 
 /* 英文字体 */
@@ -58,7 +58,7 @@ body {
 
 .lang-en-us .logo-text,
 .lang-en-us .welcome h1 {
-    font-family: 'Inter', serif;
+    font-family: 'Noto Serif', serif;
 }
 
 /* ====== 背景粒子画布 ====== */
@@ -88,7 +88,7 @@ header {
 .header-left {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .logo-icon {
@@ -111,7 +111,7 @@ header {
 .logo-text {
     font-weight: 900;
     font-size: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     background: linear-gradient(135deg, var(--fg), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -122,7 +122,7 @@ header {
 .logo-sub {
     font-size: 10px;
     color: var(--fg-muted);
-    letter-spacing: 4px;
+    letter-spacing: 0px;
     text-transform: uppercase;
     line-height: 1.2;
 }
@@ -240,7 +240,7 @@ main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 .welcome h1 {
     font-weight: 900;
     font-size: 32px;
-    letter-spacing: 6px;
+    letter-spacing: 0px;
     margin-bottom: 12px;
     background: linear-gradient(135deg, var(--fg), var(--accent));
     -webkit-background-clip: text;
@@ -399,7 +399,7 @@ main::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
     padding: 8px 0;
     color: var(--fg-muted);
     font-size: 11px;
-    letter-spacing: 4px;
+    letter-spacing: 0px;
 }
 
 .divider-line::before,
@@ -492,12 +492,12 @@ footer {
     font-size: 11px;
     color: var(--fg-muted);
     margin-top: 8px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 /* ====== 响应式 ====== */
 @media (max-width: 640px) {
-    .welcome h1 { font-size: 24px; letter-spacing: 3px; }
+    .welcome h1 { font-size: 24px; letter-spacing: 0px; }
     .welcome p { font-size: 13px; }
     .msg-content { max-width: 85%; }
     .msg-bubble { padding: 12px 14px; font-size: 14px; }
