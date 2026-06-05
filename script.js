@@ -753,6 +753,9 @@ const translations = {
             '要意识到再多的选择，难度依然不会减少太多。',
             '这个决定对你的人生有重要影响，请谨慎考虑。',
             '人生就像一场旅行，享受过程比到达目的地更重要。'
+            '你嘴巴多毒，我才不在乎。'
+            '一天一天贴近你的心，你开心，我安心。'
+            '一点一滴我都能感应，你是我最美的相信。'
         ]
     },
     'zh-tw': {
@@ -1508,6 +1511,9 @@ const translations = {
             '要意識到再多的選擇，難度依然不會減少太多。',
             '這個決定對你的人生有重要影響，請謹慎考慮。',
             '人生就像一場旅行，享受過程比到達目的地更重要。'
+            '你嘴巴多毒，我才不在乎。'
+            '一天一天貼近你的心，你開心，我安心。'
+            '一點一滴我都能感應，你是我最美的相信。'
         ]
 
     },
@@ -2264,6 +2270,9 @@ const translations = {
             "Realize that even with more choices, the difficulty won't decrease much.",
             "This decision has a significant impact on your life, please consider carefully.",
             "Life is like a journey; enjoying the process is more important than reaching the destination."
+            "I don't care how harsh your words are."
+            "Day by day, I draw closer to your heart; when you are happy, I am at ease."
+            "Little by little I can feel it all—you are my most beautiful belief."
         ]
     }
 };
